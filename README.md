@@ -10,9 +10,16 @@ This project is a **Frontend clone of the IRCTC homepage**, built during my **in
 The main objective of this project was to **design and replicate the UI of the IRCTC website** using HTML, CSS, and JavaScript, focusing on layout, styling, and user interface structure.
 
 ---
+# 📸 Preview
+
+<p align="center">
+  <img src="./Home-page.png" width="80%">
+</p>
+
+---
 
 ## 🔗 Live Preview
-
+https://siddhesh3804.github.io/IRCTC-Clone/
 
 ---
 
