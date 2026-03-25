@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --btn-color: #213d77;
+    --font-color: white;
+    --border-color: gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: Body, Quicksand, sans-serif;
+    transition: all .3s ease;
+}
+
+html {
+    font-size: 62.2%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+a, body, button, code, div, input, kbd, label, pre, samp, select, span, textarea {
+    font-family: Body, Quicksand, sans-serif;
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 1.7rem;
+    padding: .8rem;
+    color: var(--font-color);
+    background-color: var(--btn-color);
+}
+
+.btn:nth-child(1) {
+    font-size: 1.3rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 550;
+    padding: 1rem 4rem;
+    line-height: 4rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: whitesmoke;
+    z-index: 1000;
+}
+
+.header .navbar a {
+    font-size: 1.3rem;
+    line-height: 3rem;
+    padding: 0 1.2rem;
+
+}
+
+.mix {
+    position: absolute;
+    top: 10%;
+    left: 2rem;
+}
+
+.alert {
+    font-weight: 600;
+    color: black;
+    background-color: rgb(209, 207, 207);
+}
+
+.time {
+    font-weight: 600;
+}
+
+.font {
+    color: black;
+    font-weight: 600;
+}
+
+.container1 {
+    margin-top: 12rem;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./Images/home_page_banner.jpg);
+}
+
+.container1 .sub-header {
+    position: relative;
+    left: 60%;
+    color: #213d77;
+}
+
+.container1 .sub-header h1 {
+    font-size: 5.2rem;
+    padding: 2rem
+}
+
+.container1 .sub-header p {
+    font-size: 2rem;
+    padding: 0 10rem;
+    font-weight: 600;
+}
+
+.mix {
+    margin-top: -5rem;
+}
+
+.container2 {
+    margin-top: 14rem;
+    margin-left: 10rem;
+    padding-bottom: 1.5rem;
+    width: 67rem;
+    background-color: white;
+}
+
+.links i {
+    font-size: 2rem;
+}
+
+.sub-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+}
+
+.sub-container .text h1 {
+    font-size: 3.2rem;
+    color: #213d77;
+    margin-top: 1rem;
+    margin-left: 22rem;
+    margin-bottom: 1rem;
+}
+
+.container-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 14rem;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    width: 43%;
+    padding: 2rem;
+    background-color: var(--btn-color);
+}
+
+.box a {
+    margin-left: 7rem;
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.box a span {
+    font-weight: 400;
+}
+
+.box:first-child {
+    margin-left: 10rem;
+}
+
+.form-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+}
+
+.form-part1 {
+    margin-top: 1.5rem;
+}
+
+.form-part1 i {
+    font-size: 1.5rem;
+    color: var(--btn-color);
+    position: relative;
+    left: 2.5rem;
+}
+
+.form-part1 input {
+    padding: .5rem .5rem .5rem 3rem;
+    font-size: 1.7rem;
+    width: 35rem;
+    height: 4.4rem;
+    border-radius: .4rem;
+    border: 1px solid var(--border-color);
+}
+
+.form-part1 input:focus {
+    border: 2px solid var(--btn-color);
+}
+
+.form-part1 label {
+    position: relative;
+    right: 32rem;
+    font-size: 1.6rem;
+}
+
+.form-part input:focus~label,
+.form-part input:valid~label,
+.form-part input:not([value=""]) {
+    top: -2rem;
+    color: var(--btn-color);
+    font-size: 1.5rem;
+    background-color: white;
+}
+
+.form-part2 label {
+    margin-left: -20rem;
+    position: relative;
+    font-size: 1.4rem;
+    color: var(--btn-color);
+}
+
+.form-part2 input {
+    margin-left: -23rem;
+    padding: .5rem 2.8rem .5rem .5rem;
+    border-radius: .4rem;
+    height: 4.4rem;
+    width: 23rem;
+    border: 1px solid gray;
+}
+
+.arrow {
+    display: inline-block;
+    transform: rotate(90deg);
+    margin-left: 27%;
+}
+
+.arrow i {
+    font-size: 2rem;
+    color: var(--btn-color);
+    margin-top: -2rem;
+    padding: 7px;
+    border-radius: 50%;
+    border: 1px;
+    background-color: #edeff3;
+}
+
+.form-part22{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.form-part222 i {
+    font-size: 1.5rem;
+    color: var(--btn-color);
+    position: relative;
+    left: 3.5rem;
+}
+.form-part222 input {
+    padding: .5rem .5rem .5rem 3rem;
+    font-size: 1.7rem;
+    width: 35rem;
+    margin-left: 1rem;
+    height: 4.4rem;
+    border-radius: .4rem;
+    border: 1px solid var(--border-color);
+}
+
+.form-part222 input:focus {
+    border: 2px solid var(--btn-color);
+}
+
+.form-part222 label {
+    position: relative;
+    right: 32rem;
+    font-size: 1.6rem;
+}
+
+.form-part222 input:focus~label,
+.form-part222 input:valid~label,
+.form-part222 input:not([value=""]) {
+    top: -2rem;
+    color: var(--btn-color);
+    font-size: 1.5rem;
+    background-color: white;
+}
+
+.form-part2 {
+    margin-right: 2rem;
+}
+
+.form-part2 label {
+    position: relative;
+    font-size: 1.4rem;
+    bottom: 1rem;
+    color: var(--btn-color);
+}
+
+.form-part223 select {
+    padding: .5rem .5rem .5rem 3rem;
+    margin-right: 2.8rem;
+    font-weight: 500;
+    border-radius: .4rem;
+    font-size: 1.5rem;
+    color: var(--btn-color);
+    height: 4.4rem;
+    width: 23rem;
+    border: 1px solid gray;
+}
+.form-part223 select:focus{
+    background-color: rgb(230, 239, 249);
+}
+
+.form-part223 option{
+    height: 2rem;
+    background-color: white;
+}
+
+.form-part223 span {
+    font-size: 1.5rem;
+    color: var(--btn-color);
+    position: relative;
+    left: 2.5rem;
+}
+
+.general {
+    margin-top: 2.2rem;
+    margin-left: -1rem;
+}
+
+.general  span {
+    font-size: 1.5rem;
+    color: var(--btn-color);
+    position: relative;
+    left: 4.5rem;
+}
+
+.general select {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: .5rem .5rem .5rem 3rem;
+    font-size: 1rem;
+    width: 35rem;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--btn-color);
+    height: 4rem;
+    border-radius: .4rem;
+    border: 1px solid var(--border-color);
+}
+
+.general select input:focus {
+    border: 2px solid var(--btn-color);
+}
+
+.SelectCategory{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    line-height: 2.5rem;
+}
+
+.SelectCategory input{
+    margin-left: 2rem;
+}
+
+.SelectCategory a{
+    margin-left: .5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--btn-color);
+}
+
+.ButtonSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.Submit{
+    margin-top: 5rem;
+    margin-left: 3.3rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: white;
+    border-radius: .7rem;
+    padding: 1rem 3rem;
+    background-color: #fb792b;
+}
+
+.Disk{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: .7rem;
+    margin-right: 2rem;
+    background-color: #fb792b;
+}
+
+.Disk a{
+    color: white;
+}
+
+.Disk a:hover{
+    color: var(--btn-color);
+    text-decoration: underline;
+}
+
+.ExtraInformation{
+    margin-top: 1rem;
+    margin-left: 10rem;
+    padding: 1rem 1rem;
+    background-color: white;
+    width: 43vw;
+    line-height: 2rem;
+}
+
+.ExtraInformation p{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: red;
+}
+
+.ico {
+    position: absolute;
+    left: 8.4em;
+    color: var(--btn-color);
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.tform select {
+    position: relative;
+    color: var(--btn-color);
+    border: 1px solid var(--btn-color);
+    height: 6.7vh;
+    width: 50%;
+    top: 4px;
+    margin-left: 2rem;
+    padding-left: 3.8rem;
+    font-size: 1.8rem;
+    color: var(--btn-color);
+    border-radius: .5rem;
+}
+
+.secondtext {
+    position: relative;
+    color: var(--btn-color);
+    border: 1px solid var(--btn-color);
+    height: 6.7vh;
+    width: 50%;
+    top: 15px;
+    margin-left: 2rem;
+    padding-left: 3.8rem;
+    font-size: 1.8rem;
+    color: var(--btn-color);
+    border-radius: .5rem;
+    min-width: 50%;
+}
+
+.secondtext label {
+    position: absolute;
+    bottom: 4.5rem;
+    right: 3.7rem;
+    font-size: 1.3rem;
+}
+
+.secondtext input {
+    padding: 1rem;
+
+}
+
+.button {
+    margin-left: 3rem;
+    margin-top: 5rem;
+    padding: 1rem;
+    width: 12rem;
+    font-size: 1.4rem;
+    background-color: #fb792b;
+    color: white;
+    font-weight: 400;
+    border-radius: .5rem;
+}
+
+.container-4 {
+    border-bottom: 4px solid rgb(225, 221, 221);
+}
+
+.container-4 h1 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: .5rem;
+    padding: 0 20rem 0 25rem;
+}
+
+.box-thing i {
+    font-size: 5rem;
+    color: black;
+    height: 10rem;
+    width: 10rem;
+    padding: 2rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    transition: .3s linear;
+}
+
+.box-thing {
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.box-thing i:hover {
+    background-color: var(--btn-color);
+    color: white;
+}
+
+.box-thing H2 {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+}
+
+.banner3 img {
+    position: relative;
+    left: 20%;
+}
+
+.holiday-content {
+    font-family: Body, Quicksand, sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+    height: 52vh;
+    margin-top: 1rem;
+    padding: 5rem;
+    margin-left: 10%;
+    min-width: 80%;
+}
+
+.holiday h1 {
+    margin-top: 4rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.holiday .holi-box img {
+    width: 100%;
+}
+
+.holiday .holi-box {
+    width: 90%;
+    border: .5px solid rgb(175, 168, 168);
+}
+
+.holiday .holi-box h2 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+
+.holiday .holi-box p {
+    margin-top: 0rem;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.holiday .holi-box a {
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 5px;
+}
+
+.footer {
+    margin-top: 65%;
+    background-color: #e5e2e2;
+}
+
+.footer1 h2 {
+    margin-left: 20rem;
+    color: rgb(255, 253, 253);
+    font-size: 1.7rem;
+    font-weight: normal;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    background-image: linear-gradient(270deg, #9b4b90 0, #2c215d);
+}
+
+.footer-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 10rem;
+    padding-right: 10%;
+}
+
+.footer-box i {
+    font-size: 2.7rem;
+    height: 4rem;
+    width: 4rem;
+    color: white;
+    margin: 1.5rem;
+    padding-top: 8px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.3rem;
+}
+
+.footer-boxs{
+    margin-top: 0.5rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: #fff;
+    background-color: #2c215d;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content:space-around;
+    line-height: 5rem;
+}
